@@ -10,18 +10,18 @@ export default mergeConfig(
             fs: {
                 strict: true,
             },
-            proxy: {
-                '/blog-api': {
-                    target: 'https://blog-api.boycot.top',
-                    changeOrigin: true,
-                    rewrite: (path) => path.replace(/^\/blog-api/, ''),
-                },
-                '/boycot-api': {
-                    target: 'https://api.boycot.top/api',
-                    changeOrigin: true,
-                    rewrite: (path) => path.replace(/^\/boycot-api/, ''),
-                },
-            },
+            // proxy: {
+            //     '/blog-api': {
+            //         target: 'https://blog-api.boycot.top',
+            //         changeOrigin: true,
+            //         rewrite: (path) => path.replace(/^\/blog-api/, ''),
+            //     },
+            //     '/boycot-api': {
+            //         target: 'https://api.boycot.top/api',
+            //         changeOrigin: true,
+            //         rewrite: (path) => path.replace(/^\/boycot-api/, ''),
+            //     },
+            // },
         },
         plugins: [
             eslint({
