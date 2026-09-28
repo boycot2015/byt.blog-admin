@@ -23,7 +23,7 @@ axios.interceptors.request.use(
         // this example using the JWT token
         // Authorization is a custom headers key
         // please modify it according to the actual situation
-        if (!config.url?.includes('/api')) {
+        if (!config.url?.includes('/boycot-api')) {
             config.url = baseUrl + config.url;
         }
         const token = getToken();
