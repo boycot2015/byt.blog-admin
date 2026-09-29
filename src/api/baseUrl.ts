@@ -22,8 +22,8 @@ switch (env) {
         apiUrl = 'https://api.boycot.top/api'; // api url
         break;
     case 'production':
-        baseUrl = '/blog-api'; // 生产环境url
-        apiUrl = '/boycot-api'; // api url
+        // baseUrl = '/blog-api'; // 生产环境url
+        // apiUrl = '/boycot-api'; // api url
         break;
 }
 export { apiUrl };
